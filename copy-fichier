@@ -2,9 +2,13 @@
 - name: copie fichier webapp
   hosts: all
   become: true
+
+
   tasks:
+
     - name: copy file
-    copy:
-    src: /var/lib/jenkins/workspace/TESTE-FINAL-Nabil/webapp/target
-/webapp.war
-    dest: /opt/tomcat/latest/webapps
+      template:
+        copy:
+        src: /var/lib/jenkins/workspace/TESTE-FINAL-Nabil/webapp/target/webapp.war
+        dest: /opt/tomcat/latest/webapps
+
