@@ -5,6 +5,7 @@
   tasks:
     - name: copy file
       copy:
-        src: /home/ansadmin/
+        src: /var/lib/jenkins/workspace/JENKINES/webapp/target/webapp.war
         dest: /opt/tomcat/latest/webapps
+
 
