@@ -9,6 +9,6 @@
     - name: copy file
       template:
         copy:
-        src: /var/lib/jenkins/workspace/TESTE-FINAL-Nabil/webapp/target/webapp.war
+        src: /var/lib/jenkins/workspace/deploy-ansible/webapp/target/webapp.war
         dest: /opt/tomcat/latest/webapps
 
