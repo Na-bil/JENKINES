@@ -1,0 +1,20 @@
+node {
+    
+    stage('clone') {
+        git credentialsId: '2d9709e7-5669-4e8f-8451-8a3f11e2aa2a', url: 'git@gitlab.com:N-ABIL/j2e_devops.git'
+    // some block
+}
+    stage('teste') {
+        sh 'mvn test'
+    // some block
+}
+    stage('build') {
+        sh 'mvn clean install package'
+    // some block
+}
+    stage('déployer ') {
+        ansiblePlaybook becomeUser: 'ansadmin', playbook: 'copy-fichier'
+    // some block
+}
+    //
+}
