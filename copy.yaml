@@ -9,6 +9,6 @@
     - name: copy file
       template:
         copy:
-        src: /home/centos/JENKINES/webapp/target/webapp.war
+        src: /home/ansadmin/JENKINES/webapp/target/webapp.war
         dest: /opt/tomcat/latest/webapps
 
