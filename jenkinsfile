@@ -13,7 +13,7 @@ node {
     // some block
 }
     stage('déployer ') {
-        ansiblePlaybook becomeUser: 'ansadmin', playbook: 'copy-fichier'
+        ansiblePlaybook becomeUser: 'ansadmin', playbook: 'copy.yaml'
     // some block
 }
     //
