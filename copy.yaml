@@ -4,8 +4,8 @@
   become: true
   tasks:
     - name: copy file
-      template:
-        src: /var/lib/jenkins/workspace/JENKINES/webapp/target/webapp.war
+      copy:
+        src: webapp/target/webapp.war
         dest: /opt/tomcat/latest/webapps
 
 
